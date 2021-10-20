@@ -29,13 +29,14 @@ var apiMixin = {
           })
           .catch((error) => {
             console.log(error);
-            swal({
-              title: "رمز عبور یا نام کاربری اشتباه است",
-              icon: "warning",
-              buttons: {
-                yes: "باشه",
-              },
-            })
+              swal({
+                title: "رمز عبور یا نام کاربری اشتباه است",
+                icon: "warning",
+                buttons: {
+                  yes: "باشه",
+                },
+              })
+
           })
           .finally(() => {
             this.loading = false;

@@ -29,15 +29,14 @@ var apiMixin = {
           })
           .catch((error) => {
             console.log(error);
-            if (error.response.data == 400) {
               swal({
-                title: "skdsf",
+                title: "رمز عبور یا نام کاربری اشتباه است",
                 icon: "warning",
                 buttons: {
                   yes: "باشه",
                 },
               })
-            }
+
           })
           .finally(() => {
             this.loading = false;
